@@ -1,22 +1,32 @@
 package com.example.btandroid7;
 
 public class Food {
-    String url;
-    String name;
-    String price;
+    private String webLink;
+    private String imageUrl;
+    private String name;
+    private String price;
 
-    public Food(String url, String name, String price) {
-        this.url = url;
+    public Food(String webLink, String imageUrl, String name, String price) {
+        this.webLink = webLink;
+        this.imageUrl = imageUrl;
         this.name = name;
         this.price = price;
     }
 
-    public String getUrl() {
-        return url;
+    public String getImageUrl() {
+        return imageUrl;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
+    public String getWebLink() {
+        return webLink;
+    }
+
+    public void setWebLink(String webLink) {
+        this.webLink = webLink;
     }
 
     public String getName() {

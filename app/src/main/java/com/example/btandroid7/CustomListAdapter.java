@@ -54,9 +54,9 @@ public class CustomListAdapter extends BaseAdapter {
 
         Food food = this.listData.get(position);
         holder.foodNameView.setText(food.getName());
-        holder.priceView.setText("Price: " + food.price);
+        holder.priceView.setText("Price: " + food.getPrice());
 
-        int imageId = this.getDrawableResIdByName(food.getUrl());
+        int imageId = this.getDrawableResIdByName(food.getImageUrl());
 
         holder.foodView.setImageResource(imageId);
 
