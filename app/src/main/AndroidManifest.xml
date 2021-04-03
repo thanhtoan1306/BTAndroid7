@@ -20,6 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".DetailFood"></activity>
+        <activity android:name=".TemperatureConversion"></activity>
+        <activity android:name=".ChooseFood"></activity>
     </application>
 
 </manifest>
